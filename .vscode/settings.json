@@ -1,0 +1,19 @@
+{
+  "pylint.args": [
+    // "--load-plugins=pylint_django",
+    // "--help-msg=django-not-configured",
+    "--disable=missing-module-docstring",
+    "--disable=missing-function-docstring",
+    "--max-line-length=88"
+  ]
+  //   "black-formatter.args": ["--line-length=88"],
+  //   "html.format.enable": false,
+  //   "prettier.enable": false,
+  //   "[html]": {
+  //     "editor.formatOnSave": false
+  //   },
+  //   "python.analysis.typeCheckingMode": "off",
+  //   "[python]": {
+  //     "editor.defaultFormatter": "ms-python.black-formatter"
+  //   }
+}

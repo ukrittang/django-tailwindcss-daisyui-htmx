@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    <button class="btn mb-10">Home</button>
+
+    <div hx-get="/mouse-entered" hx-trigger="mouseenter">[Here Mouse, Mouse!]</div>
+{% endblock %}
