@@ -2,7 +2,7 @@
   "name": "django-tailwind-htmx",
   "version": "1.0.0",
   "scripts": {
-    "htmx": "cp ./node_modules/htmx.org/dist/htmx.min.js ./src/static/js/htmx.min.js",
+    "htmx": "cp ./node_modules/htmx.org/dist/htmx.min.js ./src/static/js/ && cp ./node_modules/htmx.org/dist/ext/* ./src/static/js/htmx-ext/",
     "dev": "npm run htmx && tailwindcss -i ./src/static/css/input.css -o ./src/static/css/style.css --watch",
     "build": "npm run htmx && tailwindcss -o ./src/static/css/style.css --minify"
   },

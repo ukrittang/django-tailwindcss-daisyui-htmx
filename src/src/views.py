@@ -8,5 +8,4 @@ def mouse_entered(request):
 
 
 def home(request):
-    print("home")
     return render(request, "home.html", {})

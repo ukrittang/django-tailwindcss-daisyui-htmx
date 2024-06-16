@@ -38,6 +38,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # My apps
+    # polls,
+    # Third-party
+    "django_htmx",
+    "django_browser_reload",
 ]
 
 MIDDLEWARE = [
@@ -48,6 +53,10 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django_htmx.middleware.HtmxMiddleware",
+    # BrowserReloadMiddleware should be listed after any others
+    # that encode the response, such as GZipMiddleware.
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 ROOT_URLCONF = "src.urls"
